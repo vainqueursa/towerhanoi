@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Tower of Hanoi</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TOWER of HANOI</h1>
+    <div class="moves">MOVES: 0</div>
+  </header>
+  <div class="container">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+  </div>
+  <footer>
+    <input type="range" id="speedSlider" min="100" max="2000" step="100" style="display:none; color: pink;" />
+    <a href="#" id="levelButton" style="display: none">PICK LVL</a>
+    <a href="#" id="visualizeButton">VISUALIZE</a>
+    <a id="reset" href="#">START</a>
+    <div class="info-container">
+      <div class="steps-column">
+        <h3>Steps</h3>
+        <ul id="stepsList"></ul> 
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
